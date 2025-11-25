@@ -19,6 +19,7 @@ from is_msgs.image_pb2 import Image
 from google.protobuf.json_format import Parse
 
 # from is_project.conf.options_pb2 import ServiceOptions
+# is-wire lab visio >> pip install --user is-wire
 from is_wire.core import Channel, Message, Subscription
 from google.protobuf.message import Message as PbMessage
 from is_msgs.image_pb2 import ObjectAnnotations

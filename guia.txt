@@ -1,0 +1,22 @@
+1. utils.py >> função: criar_csv_banco_dados()
+    * gerar um csv (através de um dataframe) dos dados com e sem normalização;
+    ** para normalizar é necessário normalizar = True e importar a função normalizacao() do arquivo norm.py;
+    *** nesse arquivo também há algumas opções de plot dos esqueletos;
+2. pca.py
+    * gerar um pca de cada csv, para comparação;
+3. GridSearchCV.py
+    * Para descobrir os melhores parâmetros para o cross validation;
+4. cross_val.py
+    * Faz o cross e também gera tabelas com as métricas de cada modelo para cada fold;
+5. matriz_confusao.py
+    * Cria o gráfico da matriz de confusão média de cada modelo 
+6. salvar_modelo.py
+    * Depois de escolher o modelo mais adequado, salva o modelo treinado;
+7. main.py
+    * A função main.py permite uma visualização dos esqueletos e detecções dos gestos + retas;
+8. view_video.py
+    * Serve para visualizar as imagems das câmeras junto ao plot do esqueleto + retas + interceção com objs (video do experimento);
+    ** No plot do esqueleto, estão incluidos os pontos dos objetos apenas se houver detecção naquele frame, por isso fiz uma gambiarra (corrigir_skeletons)
+    para gerar plots desses pontos em frames sem detecções (no meu caso foram os frames 0 e 1);
+9. real.py
+    * permite o teste em tempo real das detecções e estimativas da reta tridimensional (sem interceção com detector de objetos);
